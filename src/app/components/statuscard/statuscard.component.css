@@ -6,24 +6,20 @@ p-card{
 h1,h3{
     font-weight: normal;
 }
-p-footer div:hover{
-    font-weight: bold;
-}
+
 .cardborderbrown{
-    border: black 1px solid;
+    color: white;
     border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(120, 120, 151) , rgb(113, 141, 201));
 }
 
 .cardborderbrown:hover{
-    border: crimson 2px solid;
-    border-radius: 10px;
+    transform: scale(1.02);
 }
 
-p-footer > div:hover {
-    font-weight: bold;
-}
 
 .ui-button-danger{
     background-color: crimson;
 }
+
 

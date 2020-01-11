@@ -91,6 +91,7 @@ import { CountryService } from './demo/service/countryservice';
 import { EventService } from './demo/service/eventservice';
 import { NodeService } from './demo/service/nodeservice';
 import { StatuscardComponent } from './components/statuscard/statuscard.component';
+import { UseractivityComponent } from './components/useractivity/useractivity.component';
 
 @NgModule({
     declarations: [
@@ -108,7 +109,8 @@ import { StatuscardComponent } from './components/statuscard/statuscard.componen
         FileDemoComponent,
         MiscDemoComponent,
         DocumentationComponent,
-        StatuscardComponent
+        StatuscardComponent,
+        UseractivityComponent
     ],
     imports: [
         BrowserModule,
