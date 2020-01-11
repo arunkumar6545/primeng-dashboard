@@ -4,9 +4,11 @@ import { Car } from '../domain/car';
 import { SelectItem, MenuItem } from 'primeng/api';
 
 @Component({
-    templateUrl: './sampledemo.component.html'
+    templateUrl: './dashboard.component.html',
+    styleUrls: ['dashboard.css'],
+    
 })
-export class SampleDemoComponent implements OnInit {
+export class DashboardComponent implements OnInit {
 
     checkboxValues: string[] = [];
 

@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { AppTopBarComponent } from './app.topbar.component';
 import { AppSideBarComponent } from './app.sidebar.component';
 
-import { SampleDemoComponent } from './demo/view/sampledemo.component';
+import { DashboardComponent } from './demo/view/dashboard.component';
 import { FormsDemoComponent } from './demo/view/formsdemo.component';
 import { DataDemoComponent } from './demo/view/datademo.component';
 import { PanelsDemoComponent } from './demo/view/panelsdemo.component';
@@ -90,13 +90,14 @@ import { CarService } from './demo/service/carservice';
 import { CountryService } from './demo/service/countryservice';
 import { EventService } from './demo/service/eventservice';
 import { NodeService } from './demo/service/nodeservice';
+import { StatuscardComponent } from './components/statuscard/statuscard.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         AppTopBarComponent,
         AppSideBarComponent,
-        SampleDemoComponent,
+        DashboardComponent,
         FormsDemoComponent,
         DataDemoComponent,
         PanelsDemoComponent,
@@ -106,7 +107,8 @@ import { NodeService } from './demo/service/nodeservice';
         ChartsDemoComponent,
         FileDemoComponent,
         MiscDemoComponent,
-        DocumentationComponent
+        DocumentationComponent,
+        StatuscardComponent
     ],
     imports: [
         BrowserModule,

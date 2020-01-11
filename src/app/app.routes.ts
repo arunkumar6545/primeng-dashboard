@@ -1,6 +1,6 @@
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
-import { SampleDemoComponent } from './demo/view/sampledemo.component';
+import { DashboardComponent } from './demo/view/dashboard.component';
 import { FormsDemoComponent } from './demo/view/formsdemo.component';
 import { DataDemoComponent } from './demo/view/datademo.component';
 import { PanelsDemoComponent } from './demo/view/panelsdemo.component';
@@ -13,7 +13,7 @@ import { MiscDemoComponent } from './demo/view/miscdemo.component';
 import { DocumentationComponent } from './demo/view/documentation.component';
 
 export const routes: Routes = [
-    { path: '', component: SampleDemoComponent },
+    { path: '', component: DashboardComponent },
     { path: 'forms', component: FormsDemoComponent },
     { path: 'data', component: DataDemoComponent },
     { path: 'panels', component: PanelsDemoComponent },

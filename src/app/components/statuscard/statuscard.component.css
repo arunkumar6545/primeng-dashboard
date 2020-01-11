@@ -1,0 +1,29 @@
+
+p-card{
+    text-align: center;
+    display: inline;
+}
+h1,h3{
+    font-weight: normal;
+}
+p-footer div:hover{
+    font-weight: bold;
+}
+.cardborderbrown{
+    border: black 1px solid;
+    border-radius: 10px;
+}
+
+.cardborderbrown:hover{
+    border: crimson 2px solid;
+    border-radius: 10px;
+}
+
+p-footer > div:hover {
+    font-weight: bold;
+}
+
+.ui-button-danger{
+    background-color: crimson;
+}
+
