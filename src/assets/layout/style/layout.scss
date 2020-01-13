@@ -70,7 +70,7 @@ body {
     .layout-sidebar {
         position: fixed;
         left: 0;
-        top: 60px;
+        // top: 10px;
         width: 250px;
         background-color: #2a3238;
         height: 100%;
@@ -137,7 +137,7 @@ body {
 
     .layout-content {
         margin-left: 250px;
-        padding: 84px 24px 24px 24px;
+        padding: 24px 24px 24px 24px;
     }
 
     .layout-footer {

@@ -8,18 +8,15 @@ h1,h3{
 }
 
 .cardborderbrown{
-    color: white;
     border-radius: 10px;
-    background-image: linear-gradient(to right, rgb(120, 120, 151) , rgb(113, 141, 201));
+    background-color: white;
 }
 
 .cardborderbrown:hover{
     transform: scale(1.02);
+    box-shadow: 0px 0px 10px 10px;
 }
 
 
-.ui-button-danger{
-    background-color: crimson;
-}
 
 

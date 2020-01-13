@@ -1,0 +1,18 @@
+.rightfixed {
+    background-color : #37393b;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px 5px rgb(33, 103, 149);
+    
+  }
+
+  
+  #mybutton {
+    position: fixed;
+    top: 30%;
+    right:0px;
+    z-index: 10;
+  }

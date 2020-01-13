@@ -9,6 +9,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { AppComponent } from './app.component';
 import { AppTopBarComponent } from './app.topbar.component';
 import { AppSideBarComponent } from './app.sidebar.component';
+import {SidebarModule} from 'primeng/sidebar';
 
 import { DashboardComponent } from './demo/view/dashboard.component';
 import { FormsDemoComponent } from './demo/view/formsdemo.component';
@@ -92,6 +93,7 @@ import { EventService } from './demo/service/eventservice';
 import { NodeService } from './demo/service/nodeservice';
 import { StatuscardComponent } from './components/statuscard/statuscard.component';
 import { UseractivityComponent } from './components/useractivity/useractivity.component';
+import { AddideaComponent } from './components/addidea/addidea.component';
 
 @NgModule({
     declarations: [
@@ -110,7 +112,8 @@ import { UseractivityComponent } from './components/useractivity/useractivity.co
         MiscDemoComponent,
         DocumentationComponent,
         StatuscardComponent,
-        UseractivityComponent
+        UseractivityComponent,
+        AddideaComponent
     ],
     imports: [
         BrowserModule,
@@ -123,6 +126,7 @@ import { UseractivityComponent } from './components/useractivity/useractivity.co
         BreadcrumbModule,
         ButtonModule,
         CardModule,
+        SidebarModule,
         CalendarModule,
         CarouselModule,
         ChartModule,

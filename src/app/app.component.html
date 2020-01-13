@@ -1,8 +1,20 @@
-<div class="layout-wrapper">
-    <app-topbar></app-topbar>
-    <app-sidebar></app-sidebar>
+<div id="mybutton">
+  <ul>
+    <li class="rightfixed" (click)="display=!display">
+        <img src='assets/layout/images/ideacolor.png' height="40px" width="40px">
+    </li>
+  </ul>
+</div>
 
-    <div class="layout-content">
-        <router-outlet></router-outlet>
-    </div>
+<p-sidebar [(visible)]="display" position="right" [style]="sideoverlaystyle">
+    <img src="assets/layout/images/ideawall.jpg" height="40%" width="100%">
+</p-sidebar>
+
+<div class="layout-wrapper">
+  <!-- <app-topbar></app-topbar> -->
+  <app-sidebar></app-sidebar>
+
+  <div class="layout-content" style="z-index: -1;">
+    <router-outlet></router-outlet>
+  </div>
 </div>

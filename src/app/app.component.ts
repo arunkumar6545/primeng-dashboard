@@ -2,10 +2,17 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html'
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  display = false;
   title = 'app';
+  sideoverlaystyle = {
+    'width': '35%',
+    'background-color': '#37393b'
+  };
 
   mobileMenuActive: boolean;
 
