@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +9,7 @@ export class AppComponent {
 
   display = false;
   title = 'app';
-  sideoverlaystyle = {
-    'width': '35%',
-    'background-color': '#37393b'
-  };
+  
 
   mobileMenuActive: boolean;
 
@@ -21,8 +18,15 @@ export class AppComponent {
     event.preventDefault();
   }
 
+  
+
+
   hideMobileMenu(event) {
     this.mobileMenuActive = false;
     event.preventDefault();
+  }
+
+  displayEvent(value){
+      this.display = value;
   }
 }

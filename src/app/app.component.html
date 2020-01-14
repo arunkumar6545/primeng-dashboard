@@ -6,11 +6,10 @@
   </ul>
 </div>
 
-<p-sidebar [(visible)]="display" position="right" [style]="sideoverlaystyle">
-    <img src="assets/layout/images/ideawall.jpg" height="40%" width="100%">
-</p-sidebar>
+<app-addidea [display]="display" (valueChanged)="displayEvent($event)"></app-addidea>
 
-<div class="layout-wrapper">
+
+<div class="layout-wrapper" [ngStyle]="{'filter': display? 'blur(4px)': 'blur(0px)'}">
   <!-- <app-topbar></app-topbar> -->
   <app-sidebar></app-sidebar>
 
