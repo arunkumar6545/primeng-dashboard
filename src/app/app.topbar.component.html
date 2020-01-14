@@ -5,10 +5,12 @@
     </a>
     <img src="assets/layout/images/logo.png" class="topbar-logo">
 
-    <a [routerLink]="['/forms']" class="topbar-link"
+    <a class="topbar-link" (click) = "display=!display"
     >Add Idea</a>
   
 
   
   </div>
 </div>
+
+<app-addidea [display]="display" (valueChanged)="displayEvent($event)"></app-addidea>

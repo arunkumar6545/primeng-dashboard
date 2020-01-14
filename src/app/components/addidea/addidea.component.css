@@ -1,0 +1,9 @@
+h1{
+    font-weight: normal;
+}
+
+input, textarea{
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 3px solid orange;
+}

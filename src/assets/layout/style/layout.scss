@@ -27,7 +27,7 @@ body {
         left: 0;
         top: 0;
         width: 100%;
-        z-index: 9999;
+        z-index: 10;
         @include shadow(0 0 16px 0 rgba(0, 0, 0, 0.16));
 
         .layout-topbar-content {
@@ -70,7 +70,7 @@ body {
     .layout-sidebar {
         position: fixed;
         left: 0;
-        // top: 10px;
+        top: 60px;
         width: 250px;
         background-color: #2a3238;
         height: 100%;

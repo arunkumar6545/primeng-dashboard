@@ -1,4 +1,4 @@
-<div id="mybutton">
+<!-- <div id="mybutton">
   <ul>
     <li class="rightfixed" (click)="display=!display">
         <img src='assets/layout/images/ideacolor.png' height="40px" width="40px">
@@ -6,11 +6,11 @@
   </ul>
 </div>
 
-<app-addidea [display]="display" (valueChanged)="displayEvent($event)"></app-addidea>
+<app-addidea [display]="display" (valueChanged)="displayEvent($event)"></app-addidea> -->
 
 
-<div class="layout-wrapper" [ngStyle]="{'filter': display? 'blur(4px)': 'blur(0px)'}">
-  <!-- <app-topbar></app-topbar> -->
+<div class="layout-wrapper">
+  <app-topbar></app-topbar>
   <app-sidebar></app-sidebar>
 
   <div class="layout-content" style="z-index: -1;">

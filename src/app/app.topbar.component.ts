@@ -7,6 +7,12 @@ import {AppComponent} from './app.component';
 })
 export class AppTopBarComponent {
 
+  display = false;
+
   constructor(public app: AppComponent) {}
+
+  displayEvent(value){
+    this.display = value;
+  }
 
 }

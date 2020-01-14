@@ -4,21 +4,39 @@
   position="right"
   [style]="sideoverlaystyle"
 >
-  <img src="assets/layout/images/ideawall.jpg" height="40%" width="100%" />
-  <div class="ui-fluid">
-    <div class="card card-w-title">
-      <h1>Title</h1>
-      <div class="ui-g">
-        <div class="ui-g-12 ui-md-12">
-          <input type="text" placeholder="Title" pInputText />
+  <div class="ui-g-12 ui-md-12 ui-lg-12">
+    <p-card>
+      <img src="assets/layout/images/ideawall.jpg" height="40%" width="100%" />
+      <div class="ui-fluid">
+        <!-- <h3>Title</h3> -->
+        <div class="ui-g">
+          <div class="ui-g-12 ui-md-12">
+            <input
+              type="text"
+              [(ngModel)]="addIdea.title"
+              placeholder="Title"
+              pInputText
+            />
+          </div>
         </div>
+        <!-- <h3>Elaborate your idea</h3> -->
+        <div class="ui-g">
+          <div class="ui-g-12 ui-md-12">
+            <textarea
+              rows="7"
+              [(ngModel)]="addIdea.description"
+              placeholder="Elaborate your idea"
+              pInputTextarea
+            ></textarea>
+          </div>
+        </div>
+        <div class="ui-g">
+          <div class="ui-g-12 ui-md-12">
+              <p-chips [(ngModel)]="addIdea.tags" [style]="chipsStyle"></p-chips>
+            </div>
+            
+          </div>
       </div>
-    </div>
-
-   
+    </p-card>
   </div>
-  <p-editor
-  [(ngModel)]="description"
-  [style]="{ height: '320px' }"
-></p-editor>
 </p-sidebar>

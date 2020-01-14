@@ -117,10 +117,10 @@ import { AddideaComponent } from './components/addidea/addidea.component';
     ],
     imports: [
         BrowserModule,
+        BrowserAnimationsModule,
         FormsModule,
         AppRoutes,
         HttpClientModule,
-        BrowserAnimationsModule,
         AccordionModule,
         AutoCompleteModule,
         BreadcrumbModule,
