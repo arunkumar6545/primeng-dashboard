@@ -11,6 +11,8 @@ export class AddideaComponent implements OnInit {
   @Output() valueChanged = new EventEmitter();
   showclose = false;
 
+  description = '';
+
   sideoverlaystyle = {
     'width': '50em',
     'background-color': 'white'
