@@ -7,6 +7,14 @@ import {
   EventEmitter
 } from "@angular/core";
 
+const defaultIdea: idea = {
+  createdBy: "u552379",
+  description: "",
+  tags: [],
+  title: "",
+  uploadedFiles: []
+};
+
 @Component({
   selector: "app-addidea",
   templateUrl: "./addidea.component.html",
@@ -22,7 +30,19 @@ export class AddideaComponent implements OnInit {
     description: "",
     tags: [],
     title: "",
+    uploadedFiles: []
   };
+
+  clear(){
+    this.addIdea = defaultIdea;
+  }
+
+  onUpload(event) {
+    for(let file of event.files) {
+        this.addIdea.uploadedFiles.push(file);
+    }
+    console.log(JSON.stringify(this.addIdea));
+  }
 
   sideoverlaystyle = {
     width: "50em",
@@ -42,17 +62,7 @@ export class AddideaComponent implements OnInit {
     }
   }
 
-  uploadedFiles: any[] = [];
-
   constructor() {}
-
-  onUpload(event) {
-    console.log("hit");
-    for (let file of event.files) {
-      console.log(file.name);
-      this.uploadedFiles.push(file);
-    }
-  }
 
   submit(){
     console.log(JSON.stringify(this.addIdea))

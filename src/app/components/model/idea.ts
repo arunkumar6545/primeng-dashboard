@@ -4,4 +4,6 @@ interface idea{
     tags: string[];
     createdBy: string;
 
+    uploadedFiles: File[];
+
 }
