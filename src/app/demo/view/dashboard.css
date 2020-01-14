@@ -9,3 +9,9 @@
     transform: scale(1.02);
     box-shadow: 0px 0px 4px 4px crimson;
 }
+
+.fixedheight{
+    height: 500px;
+    overflow-y: scroll;
+    display: table-cell;
+}
