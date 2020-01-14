@@ -94,6 +94,8 @@ import { NodeService } from './demo/service/nodeservice';
 import { StatuscardComponent } from './components/statuscard/statuscard.component';
 import { UseractivityComponent } from './components/useractivity/useractivity.component';
 import { AddideaComponent } from './components/addidea/addidea.component';
+import { UsertimelineComponent } from './view/usertimeline/usertimeline.component';
+import { UsertimelinetreeComponent } from './view/usertimelinetree/usertimelinetree.component';
 
 @NgModule({
     declarations: [
@@ -113,7 +115,9 @@ import { AddideaComponent } from './components/addidea/addidea.component';
         DocumentationComponent,
         StatuscardComponent,
         UseractivityComponent,
-        AddideaComponent
+        AddideaComponent,
+        UsertimelineComponent,
+        UsertimelinetreeComponent
     ],
     imports: [
         BrowserModule,
