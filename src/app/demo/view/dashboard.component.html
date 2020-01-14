@@ -1,61 +1,16 @@
-<div class="ui-grid ui-grid-responsive margintop" style="margin-top: 65px;">
-  <div class="ui-g-12 ui-md-6 ui-lg-4 cardborderbrown">
-    <app-statuscard></app-statuscard>
-  </div>
-  <div class="ui-g-12 ui-md-6 ui-lg-8">
-    <app-useractivity></app-useractivity>
-  </div>
-</div>
-
 <div class="ui-fluid">
   <div class="ui-g">
-    <div class="ui-g-12">
-      <div
-        class="ui-messages ui-widget ui-corner-all ui-messages-success"
-        style="margin: 0 0 1em 0; display: block"
-      >
-        <span class="ui-messages-icon fa fa-fw fa-2x fa-check"></span>
-        <ul>
-          <li>
-            <span class="ui-messages-detail"
-              >Designer API Trial only includes a couple of components to
-              demonstrate how the theme engine works.</span
-            >
-          </li>
-        </ul>
-      </div>
-
+    <div class="ui-g-12 ui-md-6 ui-lg-3 cardborderbrown">
       <div class="card card-w-title">
-        <h1>Forms</h1>
-        <div class="ui-g">
-          <div class="ui-g-12 ui-md-4">
-            <input type="text" placeholder="Name" pInputText />
-          </div>
-          <div class="ui-g-12 ui-md-4">
-            <input type="text" placeholder="Email" pInputText />
-          </div>
-          <div class="ui-g-12 ui-md-4">
-            <input type="text" placeholder="Phone" pInputText />
-          </div>
-          <div class="ui-g-12 ui-md-4">
-            <input
-              type="text"
-              pInputText
-              placeholder="Disabled"
-              disabled="disabled"
-            />
-          </div>
-          <div class="ui-g-12 ui-md-4">
-            <span class="md-inputfield">
-              <input type="text" pInputText placeholder="Address" />
-            </span>
-          </div>
-          <div class="ui-g-12 ui-md-4">
-            <input type="text" placeholder="Id" pInputText />
-          </div>
-        </div>
+        <app-statuscard></app-statuscard>
       </div>
     </div>
+    <div class="ui-g-12 ui-md-6 ui-lg-9">
+      <div class="card card-w-title">
+        <app-useractivity></app-useractivity>
+      </div>
+    </div>
+
     <div class="ui-g-12 ui-md-6">
       <div class="card card-w-title">
         <h1>Checkboxes</h1>

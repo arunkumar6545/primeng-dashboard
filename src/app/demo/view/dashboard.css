@@ -1,5 +1,6 @@
-.margintop{
-    margin: 65px 10px 10px 10x;
+.ui-fluid{
+    margin-top: 65px;
+    background-color: #e2e6e8;
 }
 
 .cardborderbrown{
