@@ -6,7 +6,6 @@ import {
   Output,
   EventEmitter
 } from "@angular/core";
-import { Title } from "@angular/platform-browser";
 
 @Component({
   selector: "app-addidea",
@@ -22,7 +21,7 @@ export class AddideaComponent implements OnInit {
     createdBy: "u552379",
     description: "",
     tags: [],
-    title: ""
+    title: "",
   };
 
   sideoverlaystyle = {
@@ -31,12 +30,6 @@ export class AddideaComponent implements OnInit {
     "z-index": 9999,
     "overflow-y": "scroll"
   };
-
-  chipsStyle = {
-    
-  };
-
-  constructor() {}
 
   ngOnInit() {}
 
@@ -47,5 +40,21 @@ export class AddideaComponent implements OnInit {
       this.display = !this.display;
       this.valueChanged.emit(this.display);
     }
+  }
+
+  uploadedFiles: any[] = [];
+
+  constructor() {}
+
+  onUpload(event) {
+    console.log("hit");
+    for (let file of event.files) {
+      console.log(file.name);
+      this.uploadedFiles.push(file);
+    }
+  }
+
+  submit(){
+    console.log(JSON.stringify(this.addIdea))
   }
 }

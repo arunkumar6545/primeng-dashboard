@@ -8,7 +8,6 @@
     <p-card>
       <img src="assets/layout/images/ideawall.jpg" height="40%" width="100%" />
       <div class="ui-fluid">
-        <!-- <h3>Title</h3> -->
         <div class="ui-g">
           <div class="ui-g-12 ui-md-12">
             <input
@@ -17,26 +16,26 @@
               placeholder="Title"
               pInputText
             />
-          </div>
-        </div>
-        <!-- <h3>Elaborate your idea</h3> -->
-        <div class="ui-g">
-          <div class="ui-g-12 ui-md-12">
             <textarea
               rows="7"
               [(ngModel)]="addIdea.description"
-              placeholder="Elaborate your idea"
+              placeholder="Elaborate your idea in 500 chars"
               pInputTextarea
             ></textarea>
+
+            <h3>Upload File(doc/docx/pdf)</h3>
+            <p-fileUpload name="myfiles[]" url="">
+            </p-fileUpload>
+            <h3>Tags</h3>
+            <p-chips [(ngModel)]="addIdea.tags"></p-chips>
           </div>
         </div>
-        <div class="ui-g">
-          <div class="ui-g-12 ui-md-12">
-              <p-chips [(ngModel)]="addIdea.tags" [style]="chipsStyle"></p-chips>
-            </div>
-            
-          </div>
       </div>
+      <p-footer>
+        <button pButton type="button" label="Clear" icon="pi pi-times" class="ui-button-secondary"></button>
+        <button pButton type="button" label="Submit" (click)="submit()" icon="pi pi-check" style="margin-right: .25em"></button>
+
+    </p-footer>
     </p-card>
   </div>
 </p-sidebar>
