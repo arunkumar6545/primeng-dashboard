@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild, ViewContainerRef } from "@angular/core";
-import { DynamiccomponentloadingService } from "src/app/shared/services/dynamiccomponentloading.service";
-import { IdeasforumComponent } from "../ideasforum/ideasforum.component";
+import { DynamiccomponentloadingService } from "src/app/module/globalfeed/services/dynamiccomponentloading.service";
 import { IdeadiscussionComponent } from "../ideadiscussion/ideadiscussion.component";
 
 @Component({

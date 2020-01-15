@@ -10,7 +10,8 @@ export const routes: Routes = [
       import("./module/globalfeed/globalfeed.module").then(
         m => m.GlobalfeedModule
       )
-  }
+  },
+  { path: "**", component: DashboardComponent },
 ];
 
 export const AppRoutes: ModuleWithProviders = RouterModule.forRoot(routes);

@@ -123,7 +123,6 @@ import { GlobalfeedModule } from './module/globalfeed/globalfeed.module';
         BrowserModule,
         BrowserAnimationsModule,
         FormsModule,
-        GlobalfeedModule,
         AppRoutes,
         
         HttpClientModule,

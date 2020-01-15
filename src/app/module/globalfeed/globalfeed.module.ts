@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { routes } from './globalfeed.route';
 import { FeedcardComponent } from './feedcard/feedcard.component';
 import { IdeadiscussionComponent } from './ideadiscussion/ideadiscussion.component';
+import { DynamiccomponentloadingService } from './services/dynamiccomponentloading.service';
 
 @NgModule({
   declarations: [IdeasforumComponent, FeedcardComponent, IdeadiscussionComponent],
@@ -12,6 +13,7 @@ import { IdeadiscussionComponent } from './ideadiscussion/ideadiscussion.compone
     CommonModule,
     RouterModule.forChild(routes)
   ],
+  providers: [DynamiccomponentloadingService],
   entryComponents: [IdeadiscussionComponent]
 })
 export class GlobalfeedModule { }
