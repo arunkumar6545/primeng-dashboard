@@ -6,9 +6,10 @@ import {
   Output,
   EventEmitter
 } from "@angular/core";
+import { idea } from "../model/idea";
 
 const defaultIdea: idea = {
-  createdBy: "u552379",
+  createdBy: "u55237",
   description: "",
   tags: [],
   title: "",

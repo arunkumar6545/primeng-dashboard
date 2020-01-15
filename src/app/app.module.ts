@@ -44,8 +44,6 @@ import { EditorModule } from 'primeng/editor';
 import { FieldsetModule } from 'primeng/fieldset';
 import { FileUploadModule } from 'primeng/fileupload';
 import { GalleriaModule } from 'primeng/galleria';
-import { GrowlModule } from 'primeng/growl';
-import { InplaceModule } from 'primeng/inplace';
 import { InputMaskModule } from 'primeng/inputmask';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { InputTextModule } from 'primeng/inputtext';
@@ -68,7 +66,6 @@ import { PickListModule } from 'primeng/picklist';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { RatingModule } from 'primeng/rating';
-import { ScheduleModule } from 'primeng/schedule';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { SlideMenuModule } from 'primeng/slidemenu';
@@ -149,7 +146,6 @@ import { MyteamComponent } from './components/myteam/myteam.component';
         FieldsetModule,
         FileUploadModule,
         GalleriaModule,
-        GrowlModule,
         InputMaskModule,
         InputSwitchModule,
         InputTextModule,
@@ -172,7 +168,6 @@ import { MyteamComponent } from './components/myteam/myteam.component';
         ProgressBarModule,
         RadioButtonModule,
         RatingModule,
-        ScheduleModule,
         SelectButtonModule,
         SlideMenuModule,
         SliderModule,
