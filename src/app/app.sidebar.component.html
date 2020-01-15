@@ -1,22 +1,27 @@
-<div class="layout-sidebar" [ngClass]="{'layout-sidebar-active':app.mobileMenuActive}">
+<div
+  class="layout-sidebar"
+  [ngClass]="{ 'layout-sidebar-active': app.mobileMenuActive }"
+>
   <ul class="layout-menu" (click)="app.hideMobileMenu($event)">
     <li>
-      <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+      <a
+        [routerLink]="['/']"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
         <i class="fa fa-globe"></i>
-        <span>Dashboard
-        </span>
+        <span>Dashboard </span>
       </a>
     </li>
     <li>
-      <a [routerLink]="['/forms']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+      <a
+        [routerLink]="['/globalfeed']"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
         <i class="fa fa-eye"></i>
         <span>Global Feeds</span>
       </a>
     </li>
   </ul>
-<!-- 
-  <a href="https://www.primefaces.org/store" class="unlock-btn">
-    <i class="fa fa-unlock"></i>
-    <span>UNLOCK DESIGNER</span>
-  </a> -->
 </div>

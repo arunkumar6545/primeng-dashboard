@@ -94,6 +94,7 @@ import { AddideaComponent } from './components/addidea/addidea.component';
 import { UsertimelineComponent } from './view/usertimeline/usertimeline.component';
 import { UsertimelinetreeComponent } from './view/usertimelinetree/usertimelinetree.component';
 import { MyteamComponent } from './components/myteam/myteam.component';
+import { GlobalfeedModule } from './module/globalfeed/globalfeed.module';
 
 @NgModule({
     declarations: [
@@ -122,11 +123,14 @@ import { MyteamComponent } from './components/myteam/myteam.component';
         BrowserModule,
         BrowserAnimationsModule,
         FormsModule,
+        GlobalfeedModule,
         AppRoutes,
+        
         HttpClientModule,
         AccordionModule,
         AutoCompleteModule,
         BreadcrumbModule,
+
         ButtonModule,
         CardModule,
         SidebarModule,
