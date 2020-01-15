@@ -1,4 +1,4 @@
-interface idea{
+export interface idea{
     title: string;
     description: string;
     tags: string[];
