@@ -1,5 +1,5 @@
 .borderright{
-    border-right: 3px solid rgb(227, 216, 216);
+    border-right: 3px dashed rgb(227, 216, 216);
 }
 
 .ui-g{
