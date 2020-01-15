@@ -2,10 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { CarService } from '../service/carservice';
 import { Car } from '../domain/car';
 import { SelectItem, MenuItem } from 'primeng/api';
+import * as ani from '../../shared/animationconstants';
 
 @Component({
     templateUrl: './dashboard.component.html',
     styleUrls: ['dashboard.css'],
+    animations: [
+        ani.fadeInOut2sec
+    ]
     
 })
 export class DashboardComponent implements OnInit {
