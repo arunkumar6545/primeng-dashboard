@@ -96,6 +96,7 @@ import { UseractivityComponent } from './components/useractivity/useractivity.co
 import { AddideaComponent } from './components/addidea/addidea.component';
 import { UsertimelineComponent } from './view/usertimeline/usertimeline.component';
 import { UsertimelinetreeComponent } from './view/usertimelinetree/usertimelinetree.component';
+import { MyteamComponent } from './components/myteam/myteam.component';
 
 @NgModule({
     declarations: [
@@ -117,7 +118,8 @@ import { UsertimelinetreeComponent } from './view/usertimelinetree/usertimelinet
         UseractivityComponent,
         AddideaComponent,
         UsertimelineComponent,
-        UsertimelinetreeComponent
+        UsertimelinetreeComponent,
+        MyteamComponent
     ],
     imports: [
         BrowserModule,

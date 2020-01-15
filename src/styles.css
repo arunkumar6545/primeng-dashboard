@@ -1,6 +1,35 @@
-@import url('https://fonts.googleapis.com/css?family=Cairo');
+@import url("https://fonts.googleapis.com/css?family=Cairo");
 
-body, html{
-    font-family: "Cairo";
-    background-color: #e2e6e8;
+body,
+html {
+  font-family: "Cairo";
+  background-color: #e2e6e8;
+}
+
+.float_center {
+  float: right;
+
+  position: relative;
+  left: -50%; /* or right 50% */
+  text-align: left;
+}
+
+.float_center > .child {
+  position: relative;
+  left: 50%;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
