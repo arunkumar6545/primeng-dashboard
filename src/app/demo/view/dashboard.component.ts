@@ -8,7 +8,7 @@ import * as ani from '../../shared/animationconstants';
     templateUrl: './dashboard.component.html',
     styleUrls: ['dashboard.css'],
     animations: [
-        ani.fadeInOut2sec
+        ani.listAnimationAddAndRemove
     ]
     
 })
