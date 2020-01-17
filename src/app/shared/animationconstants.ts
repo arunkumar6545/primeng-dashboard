@@ -13,7 +13,7 @@ export const fadeInOut2sec = trigger("fadeInOut", [
       opacity: 0
     })
   ),
-  transition("void <=> *", animate(1500))
+  transition("void <=> *", animate(2000))
 ]);
 
 export const listAnimationAddAndRemove = trigger('AnimateList', [
